@@ -6,3 +6,7 @@ Future - Neweset release features as well as up and coming projects
 
 Ideas: 
 
+Notes:
+
+https://sebastianraschka.com/Articles/2014_python_2_3_key_diff.html#the-print-function
+https://wiki.python.org/moin/Python2orPython3
