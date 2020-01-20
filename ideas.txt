@@ -10,3 +10,28 @@ Notes:
 
 https://sebastianraschka.com/Articles/2014_python_2_3_key_diff.html#the-print-function
 https://wiki.python.org/moin/Python2orPython3
+
+https://www.tiobe.com/tiobe-index/
+
+Rank 4th on tiobe-index
+python was Language of the year in 2018 (also in 2010, 2007)
+
+
+https://insights.stackoverflow.com/survey/2019
+
+"Python, the fastest-growing major programming language, 
+has risen in the ranks of programming languages in our survey
+ yet again, edging out Java this year and standing as the second 
+ most loved language (behind Rust)."
+
+ - Should be noted that on SE Javascript is most popular, python being 4th
+
+ https://www.fullstackpython.com/react.html
+
+ React on python
+
+ https://developer.okta.com/blog/2018/12/20/crud-app-with-python-flask-react
+
+ https://hackr.io/blog/python-vs-javascript
+
+ "One of the fastest growing" languages
