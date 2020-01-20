@@ -1,0 +1,30 @@
+Webhooks are more of a style than a spec (think REST vs SOAP). essentially webhooks are HTTP callbacks,
+They're usually triggered by events of some sort. They can be used anywhere from continuous integration, to notications for web apps.
+
+https://cloud.google.com/dialogflow/docs/fulfillment-overview
+Fufillment - typically used to describe the end point of the webhook flow, might be more common when when you have two-way integration. Might be specific to Google DialogueFlow
+
+Payload - the content delivered by the webhook that can be processed by the recipient
+
+Webhook secret - key used to verify that incoming webhook requests
+
+
+Github and Travis CI.
+
+Travis CI uses github webhook events to trigger builds. Github previously did this via a service (todo: figure out difference between the newer webhooks and the older service).
+
+
+-Webhook events can be forwarded
+	-example. Git can push a commit even to then be built by travis.
+	-once travis passes the build it can pass an event to somewhere else to
+	 trigger a deployment
+
+-Event server vs. Listening server
+
+-Discord Returns a 204 success code to github upon send (204 = No content)
+- alternatively might be 202 (accepted)
+
+
+Github secret, use:
+
+ruby -rsecurerandom -e 'puts SecureRandom.hex(20)'

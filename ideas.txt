@@ -1,0 +1,8 @@
+Order
+
+Python - Intro, Past (2.7, 3.0)
+Present - Vs. Node
+Future - Neweset release features as well as up and coming projects
+
+Ideas: 
+
