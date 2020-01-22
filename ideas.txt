@@ -3,6 +3,7 @@ Order
 Python - Intro, Past (2.7, 3.0)
 Present - Vs. Node
 Future - Neweset release features as well as up and coming projects
+Demos - Frontend web, command line, window-based?
 
 Ideas: 
 
@@ -35,3 +36,16 @@ has risen in the ranks of programming languages in our survey
  https://hackr.io/blog/python-vs-javascript
 
  "One of the fastest growing" languages
+
+#EoL for python 2 is 2020 (rip)
+https://pip.pypa.io/en/stable/user_guide/#id1
+
+## "requirements.txt" would be the equivalent of  package.json
+
+
+https://stackabuse.com/commenting-python-code/
+
+scripting:
+
+IE: Blender (unity allows for C# and some custom version of JS but not python)
+https://docs.blender.org/manual/en/latest/advanced/scripting/introduction.html
