@@ -1,4 +1,4 @@
-title: Webhooks Presentation
+title: Snakes!.py: Python Presentation
 author:
     name: Ryan Reabel
     twitter: reabel
@@ -10,86 +10,67 @@ theme: sudodoki/reveal-cleaver-theme
 
 <!-- WIP, based off MySql presentation -->
 
-# Webhooks
-## AKA Web Callback or HTTP Push API
+# Snakes!.py
+## Random talk about python
 <!-- test comment-->
 
 --
 
-## Regular API Calls vs Webhooks
+## About
 
-* Webhooks are more of a style than a specification
-* Think REST vs SOAP
+* One of the fastest growing languages
+* Can integrate with various technologies
+* decent amount of built in packages
+* PyPI (Python Package Index)
+* PIP (Package Installer for Python)
+* Typically installed by default with linux
+* python vs python3
 
---
-
-### Api Calls
-
-![api-call-diagram](images/Webhook-api.gif)
---
-
-* Wait for a response typically
-* response is usually formatted in some manner, following a defined spec
-* processed data is sent in the response to the initial call
 
 --
 
-### Webhooks
+# The Great 3 debacle
 
-* Typically triggered by an call, posted to a defined url
-* Any processed data would be sent via a separate call typically
-* Common Terms:
-  * Event
-  * Listener / Consumer
-  * Payload
-* Usually "Subscribed" to (one time setup) by the end user (ie repo owner on github points their webhook API to an app), as opposed to requesting information via GET
+* Slow adoption rate
+* 2.x EoL 2020 even though 3 has been out since 2008.
+* key changes that require a lot of action to port packages
+<!-- * https://docs.python.org/3/howto/pyporting.html -->
 
 --
 
-## Single Webhooks
+### Python vs. Node
 
-![webhooks-single-diagram](images/Webhook-single.gif)
+<!-- ![api-call-diagram](images/Webhook-api.gif) -->
+
+- Python is best utilized for data driven instances
+- Node is best suited as a web server
+- No core libraries for node
+<!-- https://docs.python.org/3/library/ -->
+<!-- https://hackernoon.com/python-vs-nodejs-which-programming-language-to-choose-98721d6526f2 -->
 
 --
 
-## Multiple Webhooks
+| Node | Python | 
+| ---- | ------ |
+| NPM  | PIP / PYPI |
+| package.json | requirements.txt |
+| braces | tabs |
+| 1996 / 2011 | 1989 |
 
-![webhooks-multiple-diagram](images/Webhook-multi.gif)
 
 --
 
-## Passing Through Webhooks
-
-![webhooks-multiple-diagram](images/Webhook-passthru.gif)
+## ???
 
 -- 
 
-## Live Demo / Code Comparison (Node)
+## Live Demo / Code Comparison
+
+# package creation and usage
 
 --
 
-# Use Cases / Examples
-
---
-
-### Discord / Slack integrations
-
-* Admins can configure webhooks to post notifications to servers or channels
-![discord](images/discord.jpg)
-
---
-
-### Paypal
-
-* Used by Paypal for event notification, full API available
-
---
-
-### Travis CI / Github
-
-* Github has an api available that you can use to receive commit data from repositories where configured
-
-* Travis CI uses webhooks from github to trigger builds
+ # ???
 
 --
 
