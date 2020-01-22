@@ -35,11 +35,15 @@ food = [10,20]                                                     # First food 
 
 win.addch(food[0], food[1], '*')                                   # Prints the food
 
+""" https://stackoverflow.com/questions/31628140/typeerror-integer-argument-expected-got-float-python-3-4 """
+
 while key != 27:                                                   # While Esc key is not pressed
     win.border(0)
     win.addstr(0, 2, 'Score : ' + str(score) + ' ')                # Printing 'Score' and
     win.addstr(0, 27, ' SNAKE ')                                   # 'SNAKE' strings
-    win.timeout(150 - (len(snake)/5 + len(snake)/10)%120)          # Increases the speed of Snake as its length increases
+    
+    # spot the difference
+    win.timeout(150 - (len(snake)//5 + len(snake)//10)%120)          # Increases the speed of Snake as its length increases
     
     prevKey = key                                                  # Previous key pressed
     event = win.getch()
