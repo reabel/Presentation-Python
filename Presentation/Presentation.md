@@ -1,20 +1,7 @@
-title: Snakes!.py: Python Presentation
-author:
-    name: Ryan Reabel
-    twitter: reabel
-    url: http://reabelx.com
-output: presentation.html
-controls: true
-theme: sudodoki/reveal-cleaver-theme
---
-
-<!-- WIP, based off MySql presentation -->
-
 # Snakes!.py
 ## Random talk about python
-<!-- test comment-->
 
---
+---
 
 ## About
 
@@ -26,8 +13,31 @@ theme: sudodoki/reveal-cleaver-theme
 * Typically installed by default with linux
 * python vs python3
 
+---
 
---
+## About (cont'd)
+
+* Designed to be lightweight, utilize other languages other leaning wholly on python itself
+* Originated in 1991
+* Made by Guido van Rossum
+* Current Ran by [Python Software Foundation](https://www.python.org/psf/)
+* extensible in C or C++
+    * http://scipy-lectures.org/advanced/interfacing_with_c/interfacing_with_c.html
+* syntax is a bit more english like
+
+.notes : test note (press 2)
+
+.footnote: Testeruni
+
+# Presenter Notes
+
+- test 1 (press p)
+- opens a new window
+- was python really named after monty python?
+- Curses doesn't work in windows (default python library)
+- TKinter issues back college
+
+---
 
 # The Great 3 debacle
 
@@ -36,59 +46,60 @@ theme: sudodoki/reveal-cleaver-theme
 * key changes that require a lot of action to port packages
 <!-- * https://docs.python.org/3/howto/pyporting.html -->
 
---
+# Presenter Notes
+
+- IIRC EoL was originally supposed to be 2014 or something
+- 
+---
 
 ### Python vs. Node
 
 <!-- ![api-call-diagram](images/Webhook-api.gif) -->
 
-- Python is best utilized for data driven instances
+- Python is best utilized for data driven instances, although can be used for many other things
+    - Handy for dealing with other languages
 - Node is best suited as a web server
+    - mostly focused on javascript use
 - No core libraries for node
 <!-- https://docs.python.org/3/library/ -->
 <!-- https://hackernoon.com/python-vs-nodejs-which-programming-language-to-choose-98721d6526f2 -->
 
---
+---
 
-| Node | Python | 
-| ---- | ------ |
-| NPM  | PIP / PYPI |
-| package.json | requirements.txt |
-| braces | tabs |
-| 1996 / 2011 | 1989 |
+### Python vs. Node (cont'd)
 
+* Package Management: Npm - PIP / PYPI
+* project metadata: package.json - requirements.txt
+* Curly Brackets - Tabs
+* 2009 - 1991
 
---
+# Presenter Notes
 
-## ???
+- [info on requirements.txt](https://pip.readthedocs.io/en/1.1/requirements.html)
 
--- 
+Example: 
+
+`MyApp`
+`Framework==0.9.4`
+`Library>=0.2`
+
+---
 
 ## Live Demo / Code Comparison
 
-# package creation and usage
+---
 
---
+# The future
 
- # ???
+- Machine Learning, AI
+- Other integrated projects (openCV)
 
---
+---
 
-### Others
+### Things to checkout
 
-* [Bitbucket](https://developer.atlassian.com/bitbucket/api/2/reference/resource/hook_events)
-* [Instagram](https://developers.facebook.com/docs/instagram-api/guides/webhooks)
-* [Shopify](https://help.shopify.com/en/api/getting-started/webhooks)
+* Talk Python to me / Python Bytes (python podcasts)
+* 
+---
 
---
-
-### Resources
-
-* [ELI5](https://dev.to/_bigblind/comment/11oo) of webhooks
-* presentation created in [cleaver](https://www.npmjs.com/package/cleaver)
-* [Webhooks vs serverless](https://dev.to/oktadev/webhooks-vs-serverless-1end)
-* [Paypal's](https://developer.paypal.com/docs/integration/direct/webhooks/#overview) description of their webhooks
-* [Github's](https://developer.github.com/webhooks/) setup of Webhook consumers
-* [Travis-CI's](https://docs.travis-ci.com/user/notifications/#configuring-webhook-notifications) configuration for notifications
-
---
+# Thanks!

@@ -45,6 +45,8 @@ while key != 27:                                                   # While Esc k
     # spot the difference
     win.timeout(150 - (len(snake)//5 + len(snake)//10)%120)          # Increases the speed of Snake as its length increases
     
+    # hint / spoiler: in python 3 you need to use // for floor division
+
     prevKey = key                                                  # Previous key pressed
     event = win.getch()
     key = key if event == -1 else event 

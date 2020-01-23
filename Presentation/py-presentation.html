@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<!--
+  Copyright 2010 Google Inc.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+
+  Original slides: Marcin Wichary (mwichary@google.com)
+  Modifications: Ernest Delgado (ernestd@google.com)
+                 Alex Russell (slightlyoff@chromium.org)
+
+  landslide modifications: Adam Zapletal (adamzap@gmail.com)
+                           Nicolas Perriault (nperriault@gmail.com)
+-->
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Snakes!.py</title>
+    <!-- Styles -->
+    
+    <link rel="stylesheet" href="..\..\..\..\appdata\local\programs\python\python38\lib\site-packages\darkslide\themes\default\css\base.css">
+    <link rel="stylesheet" media="print" href="..\..\..\..\appdata\local\programs\python\python38\lib\site-packages\darkslide\themes\default\css\print.css">
+    <link rel="stylesheet" media="screen, projection" href="..\..\..\..\appdata\local\programs\python\python38\lib\site-packages\darkslide\themes\default\css\screen.css">
+    <link rel="stylesheet" media="all" href="..\..\..\..\appdata\local\programs\python\python38\lib\site-packages\darkslide\themes\default\css\theme.css">
+    
+    
+      
+      <link rel="stylesheet" media="all" href="theme.css">
+      
+    
+    <!-- /Styles -->
+    <!-- Javascripts -->
+    
+    <script type="text/javascript" src="..\..\..\..\appdata\local\programs\python\python38\lib\site-packages\darkslide\themes\default\js\slides.js"></script>
+    
+    
+    <!-- /Javascripts -->
+</head>
+<body>
+  <div id="blank"></div>
+  <div class="presentation">
+    <div id="current_presenter_notes">
+      <div id="presenter_note"></div>
+    </div>
+    <div class="slides">
+      
+      <!-- slide source: Presentation.md -->
+      <div class="slide-wrapper">
+        <div class="slide slide-1">
+          <div class="inner">
+            
+            <header><h1>Snakes!.py</h1></header>
+            
+            
+            <section><h2>Random talk about python</h2></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            
+            <aside class="source">
+              Source: <a href="Presentation.md">Presentation.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              1/11
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: Presentation.md -->
+      <div class="slide-wrapper">
+        <div class="slide slide-2">
+          <div class="inner">
+            
+            <header><h2>About</h2></header>
+            
+            
+            <section><ul>
+<li>One of the fastest growing languages</li>
+<li>Can integrate with various technologies</li>
+<li>decent amount of built in packages</li>
+<li>PyPI (Python Package Index)</li>
+<li>PIP (Package Installer for Python)</li>
+<li>Typically installed by default with linux</li>
+<li>python vs python3</li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            
+            <aside class="source">
+              Source: <a href="Presentation.md">Presentation.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              2/11
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: Presentation.md -->
+      <div class="slide-wrapper">
+        <div class="slide slide-3">
+          <div class="inner">
+            
+            <header><h2>About (cont'd)</h2></header>
+            
+            
+            <section><ul>
+<li>Originated in 1991</li>
+<li>Made by Guido van Rossum</li>
+<li>Current Ran by <a href="https://www.python.org/psf/">Python Software Foundation</a></li>
+<li>extensible in C or C++<ul>
+<li>http://scipy-lectures.org/advanced/interfacing_with_c/interfacing_with_c.html</li>
+</ul>
+</li>
+<li>syntax is a bit more english like</li>
+</ul>
+<p>.notes : test note (press 2)</p>
+<p>.footnote: Testeruni</p></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+              <ul>
+<li>test 1 (press p)</li>
+<li>opens a new window</li>
+<li>was python really named after monty python?</li>
+<li>Curses doesn't work in windows (default python library)</li>
+<li>TKinter issues back college</li>
+</ul>
+            
+            </section>
+          </div>
+          <footer>
+            
+            
+            <aside class="source">
+              Source: <a href="Presentation.md">Presentation.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              3/11
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: Presentation.md -->
+      <div class="slide-wrapper">
+        <div class="slide slide-4">
+          <div class="inner">
+            
+            <header><h1>The Great 3 debacle</h1></header>
+            
+            
+            <section><ul>
+<li>Slow adoption rate</li>
+<li>2.x EoL 2020 even though 3 has been out since 2008.</li>
+<li>key changes that require a lot of action to port packages
+<!-- * https://docs.python.org/3/howto/pyporting.html --></li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            
+            <aside class="source">
+              Source: <a href="Presentation.md">Presentation.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              4/11
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: Presentation.md -->
+      <div class="slide-wrapper">
+        <div class="slide slide-5">
+          <div class="inner">
+            
+            <header><h3>Python vs. Node</h3></header>
+            
+            
+            <section><!-- ![api-call-diagram](images/Webhook-api.gif) -->
+
+<ul>
+<li>Python is best utilized for data driven instances</li>
+<li>Node is best suited as a web server</li>
+<li>No core libraries for node
+<!-- https://docs.python.org/3/library/ -->
+<!-- https://hackernoon.com/python-vs-nodejs-which-programming-language-to-choose-98721d6526f2 --></li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            
+            <aside class="source">
+              Source: <a href="Presentation.md">Presentation.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              5/11
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: Presentation.md -->
+      <div class="slide-wrapper">
+        <div class="slide slide-6">
+          <div class="inner">
+            
+            <header><h3>Python vs. Node (cont'd)</h3></header>
+            
+            
+            <section><ul>
+<li>Package Management: Npm - PIP / PYPI</li>
+<li>project metadata: package.json - requirements.txt</li>
+</ul>
+<p>| package.json | requirements.txt |
+| braces | tabs |
+| 1996 / 2009 | 1991 |</p></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+              <ul>
+<li><a href="https://pip.readthedocs.io/en/1.1/requirements.html">info on requirements.txt</a></li>
+</ul>
+<p>Example: 
+<code>MyApp \n
+Framework==0.9.4
+Library&gt;=0.2</code></p>
+            
+            </section>
+          </div>
+          <footer>
+            
+            
+            <aside class="source">
+              Source: <a href="Presentation.md">Presentation.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              6/11
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: Presentation.md -->
+      <div class="slide-wrapper">
+        <div class="slide slide-7">
+          <div class="inner">
+            
+            <header><h2>???</h2></header>
+            
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            
+            <aside class="source">
+              Source: <a href="Presentation.md">Presentation.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              7/11
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: Presentation.md -->
+      <div class="slide-wrapper">
+        <div class="slide slide-8">
+          <div class="inner">
+            
+            <header><h2>Live Demo / Code Comparison</h2></header>
+            
+            
+            <section><h1>package creation and usage</h1></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            
+            <aside class="source">
+              Source: <a href="Presentation.md">Presentation.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              8/11
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: Presentation.md -->
+      <div class="slide-wrapper">
+        <div class="slide slide-9">
+          <div class="inner">
+            
+            
+            <section><p># ???</p></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            
+            <aside class="source">
+              Source: <a href="Presentation.md">Presentation.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              9/11
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: Presentation.md -->
+      <div class="slide-wrapper">
+        <div class="slide slide-10">
+          <div class="inner">
+            
+            <header><h3>Others</h3></header>
+            
+            
+            <section><ul>
+<li><a href="https://developer.atlassian.com/bitbucket/api/2/reference/resource/hook_events">Bitbucket</a></li>
+<li><a href="https://developers.facebook.com/docs/instagram-api/guides/webhooks">Instagram</a></li>
+<li><a href="https://help.shopify.com/en/api/getting-started/webhooks">Shopify</a></li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            
+            <aside class="source">
+              Source: <a href="Presentation.md">Presentation.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              10/11
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: Presentation.md -->
+      <div class="slide-wrapper">
+        <div class="slide slide-11">
+          <div class="inner">
+            
+            <header><h3>Resources</h3></header>
+            
+            
+            <section><ul>
+<li><a href="https://dev.to/_bigblind/comment/11oo">ELI5</a> of webhooks</li>
+<li>presentation created in <a href="https://www.npmjs.com/package/cleaver">cleaver</a></li>
+<li><a href="https://dev.to/oktadev/webhooks-vs-serverless-1end">Webhooks vs serverless</a></li>
+<li><a href="https://developer.paypal.com/docs/integration/direct/webhooks/#overview">Paypal's</a> description of their webhooks</li>
+<li><a href="https://developer.github.com/webhooks/">Github's</a> setup of Webhook consumers</li>
+<li><a href="https://docs.travis-ci.com/user/notifications/#configuring-webhook-notifications">Travis-CI's</a> configuration for notifications</li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            
+            <aside class="source">
+              Source: <a href="Presentation.md">Presentation.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              11/11
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+  <div id="toc" class="sidebar hidden">
+    <h2>Table of Contents</h2>
+    <table>
+      <caption>Table of Contents</caption>
+
+<!-- macro for generating subsection of TOC -->
+
+<!-- end of macro -->
+
+      <!-- generating sections of TOC -->
+      
+      <tr id="toc-row-1">
+        <th><a href="#slide:1">Snakes!.py</a></th>
+        <td><a href="#slide:1">1</a></td>
+      </tr>
+      
+         <!-- generating subsections of TOC -->
+         
+         
+        
+        <tr id="toc-row-2" class="sub">
+          <th><a href="#slide:2">About</a></th>
+          <td><a href="#slide:2">2</a></td>
+        </tr>
+        
+        
+        <tr id="toc-row-3" class="sub">
+          <th><a href="#slide:3">About (cont'd)</a></th>
+          <td><a href="#slide:3">3</a></td>
+        </tr>
+        
+        
+      
+      
+      <tr id="toc-row-4">
+        <th><a href="#slide:4">The Great 3 debacle</a></th>
+        <td><a href="#slide:4">4</a></td>
+      </tr>
+      
+         <!-- generating subsections of TOC -->
+         
+         
+        
+        <tr id="toc-row-7" class="sub">
+          <th><a href="#slide:7">???</a></th>
+          <td><a href="#slide:7">7</a></td>
+        </tr>
+        
+        
+        <tr id="toc-row-8" class="sub">
+          <th><a href="#slide:8">Live Demo / Code Comparison</a></th>
+          <td><a href="#slide:8">8</a></td>
+        </tr>
+        
+        
+      
+      
+    </table>
+  </div>
+  
+  <div id="help" class="sidebar hidden">
+    <h2>Help</h2>
+    <table>
+      <caption>Help</caption>
+      <tr>
+        <th>Table of Contents</th>
+        <td>t</td>
+      </tr>
+      <tr>
+        <th>Exposé</th>
+        <td>ESC</td>
+      </tr>
+      <tr>
+        <th>Presenter View</th>
+        <td>p</td>
+      </tr>
+      <tr>
+        <th>Source Files</th>
+        <td>s</td>
+      </tr>
+      <tr>
+        <th>Slide Numbers</th>
+        <td>n</td>
+      </tr>
+      <tr>
+        <th>Toggle screen blanking</th>
+        <td>b</td>
+      </tr>
+      <tr>
+        <th>Show/hide next slide</th>
+        <td>c</td>
+      </tr>
+      <tr>
+        <th>Notes</th>
+        <td>2</td>
+      </tr>
+      <tr>
+        <th>Help</th>
+        <td>h</td>
+      </tr>
+    </table>
+    <br>
+    <strong>Generated with Darkslide 5.1.0</strong>
+  </div>
+  <script>main()</script>
+</body>
+</html>
