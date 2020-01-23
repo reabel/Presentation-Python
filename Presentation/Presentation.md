@@ -20,14 +20,15 @@
 * Designed to be lightweight, utilize other languages other leaning wholly on python itself
 * Originated in 1991
 * Made by Guido van Rossum
+* Named after Monty Python's Flying Circus
 * Current Ran by [Python Software Foundation](https://www.python.org/psf/)
 * extensible in C or C++
     * http://scipy-lectures.org/advanced/interfacing_with_c/interfacing_with_c.html
 * syntax is a bit more english like
 
-.notes : test note (press 2)
+<!--.notes : test note (press 2)
 
-.footnote: Testeruni
+.footnote: Testeruni -->
 
 # Presenter Notes
 
@@ -36,6 +37,7 @@
 - was python really named after monty python?
 - Curses doesn't work in windows (default python library)
 - TKinter issues back college
+- https://docs.python.org/2/faq/general.html#what-is-python
 
 ---
 
@@ -85,7 +87,7 @@ Example:
 
 ---
 
-## Live Demo / Code Comparison
+# Live Demo / Code Comparison
 
 ---
 
@@ -99,7 +101,7 @@ Example:
 ### Things to checkout
 
 * Talk Python to me / Python Bytes (python podcasts)
-* 
+
 ---
 
 # Thanks!
